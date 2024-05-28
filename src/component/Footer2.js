@@ -9,10 +9,10 @@ export default function Footer2 () {
             </span>
             <ul class="flex flex-wrap items-center mt-3 text-md font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
                 <li>
-                    <a href="#" class="hover:underline me-4 md:me-6">About Us</a>
+                    <a href="/About" class="hover:underline me-4 md:me-6">About Us</a>
                 </li>
                 <li>
-                    <a href="#" class="hover:underline me-4 md:me-6">Product</a>
+                    <a href="/Product" class="hover:underline me-4 md:me-6">Product</a>
                 </li>
                 <li>
                     <a href="#" class="hover:underline me-4 md:me-6">Contact Us</a>

@@ -6,9 +6,9 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 export default function Header2 () {
 
     const navigation = [
-        { name: 'Tech', href: '#', current: false },
-        { name: 'Media', href: '#', current: false },
-        { name: 'Culinary', href: '#', current: false },
+        { name: 'About Us', href: '/About', current: false },
+        { name: 'Service', href: '/Service', current: false },
+        { name: 'Contact Us', href: '#', current: false },
     ]
 
     function classNames(...classes) {
