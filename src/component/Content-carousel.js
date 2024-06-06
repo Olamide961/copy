@@ -4,7 +4,12 @@ export default function Carousel () {
 
     return (
         <>
-        <div className="h-96 bg-gray-700 mx-3 mt-4 rounded-s-3xl rounded-e-3xl"></div>
+        <div className="h-96 mt-9 bg-gray-300 mx-4 rounded-3xl">
+            <div className="flex justify-center">
+                <p className="mt-40 text-5xl text-gray-500">optimize
+                     evolve  transend</p>
+            </div>
+        </div>
         </>
     )
    {/* const [currentState, setCurrentState] = useState(0)

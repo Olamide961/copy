@@ -1,21 +1,19 @@
-export default function Tech () {
+
+
+export default function Product() {
     return (
         <>
-        <div className="flex h-full w-full ">
-            <div className="flex flex-row justify-center w-full h-96 mt-60 gap-10 mx-auto">
-                <div className="">
-                    <img className="border h-72 w-72" src="" alt="" />
-                    <p className="text-center">6te9 tech</p>
-                </div>
+        <div className="mt-40 mx-9">
+            <h1 className="text-center text-4xl text-gray-600">Business Solution</h1>
+            <div className="flex mt-18 flex-row justify-center w-full">
+                <div className="flex flex-row relative mt-20">
+                    <div className="relative border border-black w-96 h-40 rounded-xl"></div>
+                    <div className="absolute border border-black w-96 h-40 left-14 -top-10 bg-white rounded-xl"></div>
+                </div>       
 
-                <div className="">
-                    <img className="border h-72 w-72" src="" alt="" />
-                    <p className="text-center">6te9 media</p>
-                </div>
-
-                <div className="">
-                    <img className="border h-72 w-72" src="" alt="" />
-                    <p className="text-center">6te9 culinary</p>
+                <div className="flex flex-row relative mt-20 ml-40">
+                    <div className="relative border border-black w-96 h-40 rounded-xl"></div>
+                    <div className="absolute border border-black w-96 h-40 left-14 -top-10 bg-white rounded-xl"></div>
                 </div>
             </div>
         </div>

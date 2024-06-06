@@ -25,7 +25,7 @@ export default function About () {
             </div>
 
             <div className="justify-center ml-32 mt-20">
-                <img className="border h-72 w-110" src="" alt="" />
+                <div className="border border-black rounded-2xl h-72 w-110" src="" alt="" />
             </div>
 
             <div className="ml-32 mt-28">
