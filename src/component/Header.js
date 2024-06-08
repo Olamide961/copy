@@ -21,9 +21,9 @@ function Header () {
                 <>
                 <div className="mx-0 w-full  bg-white-700 mt-2 px-2 sm:px-6 lg:px-8">
                     <div className="relative flex h-16 items-center justify-between ">
-                        <div className="absolute inset-y-0 flex right-0 items-center sm:hidden">
+                        <div className="absolute inset-y-0 flex right-0 items-center lg:hidden">
                             {/* Mobile menu button*/}
-                            <Disclosure.Button className="relative inline-flex items-center justify-end rounded-md p-2 text-gray-900 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                            <Disclosure.Button className="relative inline-flex items-center justify-end rounded-md p-2 text-black-900 hover:text-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                             <span className="absolute -inset-0.5" />
                             <span className="sr-only">Open main menu</span>
                             {open ? (
@@ -61,7 +61,7 @@ function Header () {
                                 </button>
                             </form>
 
-                            <div className="hidden mt-3 sm:ml-6 sm:block">
+                            <div className="hidden mt-3 sm:ml-6 lg:block">
                                 <div className="flex space-x-10">
                                     {navigation.map((item) => (
                                     <a
@@ -82,7 +82,7 @@ function Header () {
                     </div>
                 </div>
 
-                <Disclosure.Panel className=" bg-gray-900 rounded-lg mt-2 sm:hidden">
+                <Disclosure.Panel className=" bg-gray-900 rounded-lg mt-2 lg:hidden">
                     <div className="space-y-1 px-2 pb-3 pt-2">
                     {navigation.map((item) => (
                         <Disclosure.Button

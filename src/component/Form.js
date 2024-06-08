@@ -3,23 +3,23 @@
 export default function Form () {
     return (
         <>
-        <div className="flex flex-row flex-nowrap mx-3 mt-10 mb-9 mlg:hidden">
+        <div className="flex flex-row flex-nowrap mx-3 mt-10 mb-20 mlg:hidden">
             <div className="grow text-center">
                 <h3 className="subpixel-antialiased text-xl ">BROWSE PRODUCTS</h3>
 
                 <div className="flex flex-wrap gap-4 justify-center mt-4">
                     <div>
-                        <div className="w-40 h-40 border border-black rounded-2xl"  />
-                        <p>6te9 tech</p>
+                        <div className="w-40 h-40 border border-black rounded-2xl " />
+                        <a href="/Tech">6te9 tech</a>
                     </div>
 
                     <div>
-                        <div className="w-40 h-40 border border-black rounded-2xl" src="" alt=""  />
+                        <div className="w-40 h-40 border border-black rounded-2xl" />
                         <p>6te9 media</p>
                     </div>
 
                     <div>
-                        <div className="w-40 h-40 border border-black rounded-2xl" src="" alt=""  />
+                        <div className="w-40 h-40 border border-black rounded-2xl " />
                         <p>6te9 culinary</p>
                     </div>
                 </div>
@@ -29,7 +29,7 @@ export default function Form () {
                 <h4 className="subpixel-antialiased text-xl">Inquiry/Contact Us</h4>
 
                 <form>
-                    <div className="flex flex-col h-auto mb-6 mt-7 ">
+                    <div className="flex flex-col h-auto mb-6 mt-7 msm:hidden">
                         <div className="mb-4">
                             <label for="name">Name: </label>
                             <input type="text" className="border ml-12 w-80 h-12 rounded-xl shadow-xl text-sm p-2.5" placeholder="John Doe" />

@@ -29,14 +29,14 @@ module.exports = {
       'mxl' : { 'max' : "12800px"},
 
       '2mxl' : { 'max' : "1536px"},
-    }
+    },
 
-  },
     extend: {
       width: {
-        '110': '31em',
+        '110': '31rem',
       }
     },
+  },  
   plugins: [],
 }
 
