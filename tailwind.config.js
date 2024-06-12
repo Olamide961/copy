@@ -9,10 +9,10 @@ module.exports = {
       // => @media (min-width: 640px) { ... }
 
       'md': '768px',
-      // => @media (min-width: 768px) { ... }
+      // => @media (min-width: 770px) { ... }
 
       'lg': '1024px',
-      // => @media (min-width: 1024px) { ... }
+      // => @media (min-width: 1022px) { ... }
 
       'xl': '1280px',
       // => @media (min-width: 1280px) { ... }
@@ -22,11 +22,11 @@ module.exports = {
 
       'msm' : { 'max' : "640px"},
 
-      'mmd' : { 'max' : "768px"},
+      'mmd' : { 'max' : "770px"},
 
-      'mlg' : { 'max' : "1024px"},
+      'mlg' : { 'max' : "1022px"},
 
-      'mxl' : { 'max' : "12800px"},
+      'mxl' : { 'max' : "1280px"},
 
       '2mxl' : { 'max' : "1536px"},
     },
@@ -34,6 +34,7 @@ module.exports = {
     extend: {
       width: {
         '110': '31rem',
+        '84' : '22rem',
       }
     },
   },  

@@ -1,10 +1,13 @@
+import '../css/index.css';
+
+
 export default function Contact () {
     return (
         <>
-        <div className=" mt-40 ml-20 mr-40">
-            <h1 className="subpixel antialiased font-semibold text-gray-500 text-5xl">Contact Us</h1>
-            <div className="flex flex-row justify-between mt-9">
-                <div className="">
+        <div className=" mt-40 ml-20 mr-20 mb-40 mlg:mr-9 mmd:mx-0">
+            <h1 className="subpixel antialiased font-semibold text-gray-500 text-5xl mmd:text-center">Contact Us</h1>
+            <div className="flex flex-row justify-between mt-9 mmd:flex mmd:flex-col ">
+                <div className="mmd:flex mmd:justify-center mmd:ml-16">
                     <form className="w-96">
                         <div className="mb-4 flex flex-row">
                             <label for="name" className="h-12 w-24 font-sans text-gray-400 antialiased font-semibold leading-relaxed tracking-normal text-blue-gray-900"><p className="mt-2">Name: </p> </label>
@@ -41,7 +44,7 @@ export default function Contact () {
 
                 </div>
 
-                <div className="">
+                <div className="ml-9 mmd:hidden">
                      <h6 className="text-lg text-center">Socials</h6>
                      <div className="flex flex-col mt-4">
                         <div className="flex flex-row mb-4">
@@ -71,14 +74,28 @@ export default function Contact () {
                      </div>
                 </div>
 
-                <div className="flex flex-col mt-6">
-                    <p className="mb-4">6te9 Media</p>
-                    <p className="mb-4">6te9 tech</p>
-                    <p className="mb-4">Core Value</p>
-                    <p className="mb-4">Lorem ipsum</p>
-                    <p className="mb-4">Lorem ispum</p>
-                    <p>Lorem ispum</p>
+                <div>
+                    <iframe className="iframe w-40" src="Iframe"/>
                 </div>
+
+                <div className="flex flex-col md:hidden">
+                    <h2 className="text-3xl ml-16 mt-16">Socials</h2>
+                    <div className="flex flex-row gap-10 ml-16 mt-3">
+                        <p>6te9</p>
+                        <p>6te9</p>
+                    </div>
+
+                    <div className="flex flex-row gap-10 ml-16 mt-3">
+                        <p>6te9</p>
+                        <p>6te9</p>
+                    </div>
+
+                    <div className="flex flex-row gap-10 ml-16 mt-3">
+                        <p>6te9</p>
+                        <p>6te9</p>
+                    </div>
+                </div>
+
             </div>
         </div>
 

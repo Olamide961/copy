@@ -2,13 +2,14 @@ import React from "react";
 import logo from "./img/logo.png";
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import Footer from "./Footer";
 
 function Header () {
 
     const navigation = [
         { name: 'tech', href: '/Tech', current: false },
-        { name: 'media', href: '#', current: false },
-        { name: 'culinary', href: '#', current: false },
+        { name: 'media', href: '/ServiceDetails', current: false },
+        { name: 'Culinary', href: '/Culinary', current: false },
     ]
 
     function classNames(...classes) {
@@ -19,7 +20,7 @@ function Header () {
         <Disclosure as="nav" className="mx-2">
             {({open}) => (
                 <>
-                <div className="mx-0 w-full  bg-white-700 mt-2 px-2 sm:px-6 lg:px-8">
+                <div className="mx-0 w-full  bg-white-700 mt-2 px-6 mlg:pr-0">
                     <div className="relative flex h-16 items-center justify-between ">
                         <div className="absolute inset-y-0 flex right-0 items-center lg:hidden">
                             {/* Mobile menu button*/}
@@ -102,8 +103,8 @@ function Header () {
                 </Disclosure.Panel>
                 </>
             )}
+            
         </Disclosure>
-
     )
 }
 

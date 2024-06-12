@@ -1,0 +1,24 @@
+/*.iframe {
+    display: block;
+}
+ ::-webkit-scrollbar {
+    width: 20px;
+  }
+
+  ::-webkit-scrollbar-track { 
+    border-radius: 5px;
+    border: 1px solid black;
+    opacity: 0.1;
+    margin-top: 20px;
+  }
+   
+  ::-webkit-scrollbar-thumb { 
+    border-radius: 3px;
+    margin-top: 10px;
+    border: 1px solid black;
+  }
+  
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: black;
+  } */
