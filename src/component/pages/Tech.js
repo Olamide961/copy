@@ -9,7 +9,7 @@ export default function Product() {
             <div className="flex mt-18 flex-row justify-start gap-28 w-full">
                 <ToggleCard />
                 <ToggleCard />
-                <div></div>
+                
             </div>
         </div>
         </>
