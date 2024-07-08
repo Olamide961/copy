@@ -1,5 +1,7 @@
-/*.iframe {
-    display: block;
+/*
+
+#sidebar {
+  display: block;
 }
  ::-webkit-scrollbar {
     width: 20px;
@@ -21,4 +23,5 @@
 
   ::-webkit-scrollbar-thumb:hover {
     background: black;
-  } */
+  } 
+*/

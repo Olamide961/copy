@@ -11,7 +11,8 @@ import Contact from "./component/pages/Contact";
 import Media from "./component/pages/Media";
 import Culinary from "./component/pages/Culinay";
 import ServiceDetails from "./component/pages/service-details";
-import Iframe from "./component/pages/Iframe";
+import Sitemap from "./component/pages/Sitemap";
+import Iframe from "./component/internalComp/SideScroll";
 
 
 function App () {
@@ -32,11 +33,11 @@ function App () {
           <Route path="/ServiceDetails" element={<ServiceDetails /> } />
           <Route path="/Media" element={<Media /> } />
           <Route path="/Culinary" element={<Culinary /> } />
+          <Route path="/Sitemap" element={<Sitemap />} />
         </Route>  
 
-        <Route>
-          <Route path="/Iframe" element={<Iframe />} />
-        </Route>
+        <Route path="/Iframe" element={<Iframe />} />
+
       </Routes>
     </Router>
     </>

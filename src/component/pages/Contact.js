@@ -1,4 +1,7 @@
 import '../css/index.css';
+import SideScroll from '../internalComp/SideScroll';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook,faSnapchat,faTwitter,faInstagram,faTelegram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 
 export default function Contact () {
@@ -48,36 +51,41 @@ export default function Contact () {
                      <h6 className="text-lg text-center">Socials</h6>
                      <div className="flex flex-col mt-4">
                         <div className="flex flex-row mb-4">
-                            <p className="w-9">F</p>
+                            <p className="w-9"><FontAwesomeIcon icon={faFacebook} /></p>
+                            <p className="ml-9">6te9.tech</p>
+                        </div>
+
+                        <div className="flex flex-row mb-4">
+                            <p className="w-9"><FontAwesomeIcon icon={faInstagram} /></p>
+                            <p className="ml-9">6te9.tech</p>
+                        </div>
+
+                        <div className="flex flex-row mb-4">
+                            <p className="w-9"><FontAwesomeIcon icon={faTwitter} /></p>
                             <p className="ml-9">6te9</p>
                         </div>
 
                         <div className="flex flex-row mb-4">
-                            <p className="w-9">T</p>
+                            <p className="w-9"><FontAwesomeIcon icon={faSnapchat} /></p>
                             <p className="ml-9">6te9</p>
                         </div>
 
                         <div className="flex flex-row mb-4">
-                            <p className="w-9">I</p>
-                            <p className="ml-9">6te9</p>
-                        </div>
-
-                        <div className="flex flex-row mb-4">
-                            <p className="w-9">S</p>
+                            <p className="w-9"><FontAwesomeIcon icon={faTelegram} /></p>
                             <p className="ml-9">6te9</p>
                         </div>
 
                         <div className="flex flex-row">
-                            <p className="w-9">TT</p>
-                            <p className="ml-9">6te9</p>
+                            <p className="w-9"><FontAwesomeIcon icon={faWhatsapp} /></p>
+                            <p className="ml-9">08084536168</p>
                         </div>
                      </div>
                 </div>
 
-                <div>
-                    <iframe className="iframe w-40" src="Iframe"/>
+                <div className="flex flex-col mt-6 ml-9 mmd:hidden">
+                  <SideScroll />
                 </div>
-
+                    
                 <div className="flex flex-col md:hidden">
                     <h2 className="text-3xl ml-16 mt-16">Socials</h2>
                     <div className="flex flex-row gap-10 ml-16 mt-3">

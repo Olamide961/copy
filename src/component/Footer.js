@@ -5,7 +5,7 @@ export default function Footer () {
         <>
         <footer class="fixed bg-white w-full bottom-0 mt-4 shadow-2xl mmd:bottom-0">
             <div class="w-full w-full p-4 md:flex md:items-center md:justify-between mmd:text-center">
-            <span class="text-md text-black-200 sm:text-center opacity-75 dark:text-black-200">6te9 LTD © 2024 <span className="mx-4">|</span><a href="#" class="hover:underline">sitemap</a>
+            <span class="text-md text-black-200 sm:text-center opacity-75 dark:text-black-200">6te9 LTD © 2024 <span className="mx-4">|</span><a href="/Sitemap" class="hover:underline">sitemap</a>
             </span>
             <ul class="flex flex-wrap items-center mt-3 text-md font-medium text-black-500 opacity-75 dark:text-black-400 sm:mt-0 msm:flex mmd:justify-center">
                 <li>
