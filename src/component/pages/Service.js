@@ -1,4 +1,3 @@
-import { text } from "@fortawesome/fontawesome-svg-core"
 import ServiceCard from "../internalComp/ServiceCard"
 export default function Service () {
     return (

@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircle,faPlay } from '@fortawesome/free-solid-svg-icons';
 import  ToggleCard from '../internalComp/ToggleCard'
 
 

@@ -1,5 +1,4 @@
 import Carousel from "../Content-carousel";
-import Footer from "../Footer";
 import Form from "../Form";
 
 function Home() {
