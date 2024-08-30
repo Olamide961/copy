@@ -1,19 +1,51 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import logo from "./img/logo.png";
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import axios from "axios";
+
 
 function Header () {
 
+    const [searchQuery, setSearchQuery] = useState('');
+    const [searchResults, setSearchResults] =useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState('');
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await axios.get(
+                    `https://jsonplaceholder.typicode.com/todos?_limit=10`
+                );
+                setSearchResults(response.data);
+                setLoading(false);
+            } catch (error) {
+                setError('Error fetching data. Please try again.');
+                setLoading(false);
+            }
+        };
+        fetchData();
+    }, []);
+
+    const handleSearch = (e) => {
+        const query = e.target.value;
+        setSearchQuery(query);
+        const filteredResults = searchResults.filter((result) =>
+          result.title.includes(query)
+        );
+        setSearchResults(filteredResults);
+      };
+
     const navigation = [
         { name: 'tech', href: '/Tech', current: false },
-        { name: 'media', href: '/ServiceDetails', current: false },
+        { name: 'media', href: '/Media', current: false },
         { name: 'Culinary', href: '/Culinary', current: false },
     ]
 
     function classNames(...classes) {
         return classes.filter(Boolean).join(' ')
       }
+
 
     return (
         <Disclosure as="nav" className="mx-2">
@@ -35,16 +67,17 @@ function Header () {
                         </div>
                         <div className="flex w-full items-center justify-start sm:items-stretch sm:justify-between">
                             <div className="flex flex-shrink-0 items-center">
-                            <img
+                            <a href="/Home" className="h-16 w-auto"><img 
                                 className="h-16 w-auto"
                                 src={logo}
                                 alt="Your Company"
                             />
+                            </a>
                             </div>
 
 
                             <form className="form flex items-center mlg:hidden">   
-                                <label for="voice-search" class="sr-only">Search</label>
+                                
                                 <div class="relative w-80">
                                     <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
                                         <svg class="w-6 h-6 text-white-800 dark:text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -52,7 +85,8 @@ function Header () {
                                         </svg>
 
                                     </div>
-                                    <input type="text" id="voice-search" class="bg-white-50 border border-black-500/100 text-black-900 text-sm rounded-lg outline-none focus:ring-clack-500 focus:border-gray-500 block w-full ps-10 p-2.5 shadow-lg dark:bg-black-700 dark:border-gray-600 dark:placeholder-black-400 dark:text-black dark:focus:ring-black-500 dark:focus:border-black-500" placeholder="Search Components....." required />
+                                    <input type="text" value={searchQuery} onChange={handleSearch} id="voice-search" class="bg-white-50 border border-black-500/100 text-black-900 text-sm rounded-lg outline-none focus:ring-clack-500 focus:border-gray-500 block w-full ps-10 p-2.5 shadow-lg dark:bg-black-700 dark:border-gray-600 dark:placeholder-black-400 dark:text-black dark:focus:ring-black-500 dark:focus:border-black-500" placeholder="Search Components....." required />
+
                                 </div>
                                 <button type="submit" class="inline-flex items-center py-2.5 px-2 ms-2 text-sm font-medium text-black bg-white hover:bg--800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg--600 dark:hover:bg--700 dark:focus:ring--800">
                                     <svg class="w-4 h-4 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">

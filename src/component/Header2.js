@@ -35,11 +35,12 @@ function Header () {
                         </div>
                         <div className="flex w-full items-center justify-start sm:items-stretch sm:justify-between">
                             <div className="flex flex-shrink-0 items-center">
-                            <img
+                            <a href="/Home" className="h-16 w-auto"><img 
                                 className="h-16 w-auto"
                                 src={logo}
                                 alt="Your Company"
                             />
+                            </a>
                             </div>
 
 
