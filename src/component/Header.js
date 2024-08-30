@@ -57,7 +57,7 @@ function Header () {
                                         </svg>
 
                                     </div>
-                                    <input type="text" value={searchQuery} onChange={handleSearch} id="voice-search" class="bg-white-50 border border-black-500/100 text-black-900 text-sm rounded-lg outline-none focus:ring-clack-500 focus:border-gray-500 block w-full ps-10 p-2.5 shadow-lg dark:bg-black-700 dark:border-gray-600 dark:placeholder-black-400 dark:text-black dark:focus:ring-black-500 dark:focus:border-black-500" placeholder="Search Components....." required />
+                                    <input type="text" id="voice-search" class="bg-white-50 border border-black-500/100 text-black-900 text-sm rounded-lg outline-none focus:ring-clack-500 focus:border-gray-500 block w-full ps-10 p-2.5 shadow-lg dark:bg-black-700 dark:border-gray-600 dark:placeholder-black-400 dark:text-black dark:focus:ring-black-500 dark:focus:border-black-500" placeholder="Search Components....." required />
 
                                 </div>
                                 <button type="submit" class="inline-flex items-center py-2.5 px-2 ms-2 text-sm font-medium text-black bg-white hover:bg--800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg--600 dark:hover:bg--700 dark:focus:ring--800">
