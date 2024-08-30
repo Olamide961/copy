@@ -1,40 +1,12 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import logo from "./img/logo.png";
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import axios from "axios";
 
 
 function Header () {
 
-    const [searchQuery, setSearchQuery] = useState('');
-    const [searchResults, setSearchResults] =useState([]);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState('');
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await axios.get(
-                    `https://jsonplaceholder.typicode.com/todos?_limit=10`
-                );
-                setSearchResults(response.data);
-                setLoading(false);
-            } catch (error) {
-                setError('Error fetching data. Please try again.');
-                setLoading(false);
-            }
-        };
-        fetchData();
-    }, []);
-
-    const handleSearch = (e) => {
-        const query = e.target.value;
-        setSearchQuery(query);
-        const filteredResults = searchResults.filter((result) =>
-          result.title.includes(query)
-        );
-        setSearchResults(filteredResults);
-      };
+   
 
     const navigation = [
         { name: 'tech', href: '/Tech', current: false },
