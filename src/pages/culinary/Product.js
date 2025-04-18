@@ -7,7 +7,7 @@ export default function Tech () {
 
                 <div className=""> 
                     <div className="border border-black rounded-3xl h-72 w-72 " />
-                    <p className="text-center"><a href="/Tech">6te9 tech</a></p>
+                    <p className="text-center"><a href="/tech">6te9 tech</a></p>
                 </div>
 
                 <div className="">

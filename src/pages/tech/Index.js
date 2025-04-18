@@ -1,7 +1,7 @@
-import  ToggleCard from '../internalComp/ToggleCard'
+import  ToggleCard from '../../component/ToggleCard'
 
 
-export default function Product() {
+export default function Index() {
     return (
         <>
         <div className="mt-40 mx-9">

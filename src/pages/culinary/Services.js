@@ -1,5 +1,5 @@
-import ServiceCard from "../internalComp/ServiceCard"
-export default function Service () {
+import ServiceCard from "../../component/ServiceCard"
+export default function Services () {
     return (
 
         <>

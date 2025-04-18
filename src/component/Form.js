@@ -10,7 +10,7 @@ export default function Form () {
                 <div className="flex flex-wrap gap-4 justify-center mt-6 mmd:hidden">
                     <div>
                         <div className="w-40 h-40 border border-black rounded-2xl mmd:hidden" />
-                        <a href="/Tech">6te9 tech</a>
+                        <a href="/tech">6te9 tech</a>
                     </div>
 
                     <div>

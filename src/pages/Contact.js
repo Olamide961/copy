@@ -1,5 +1,5 @@
-import '../css/index.css';
-import SideScroll from '../internalComp/SideScroll';
+// import '../css/index.css';
+// import SideScroll from '../internalComp/SideScroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook,faSnapchat,faTwitter,faInstagram,faTelegram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
@@ -82,9 +82,9 @@ export default function Contact () {
                      </div>
                 </div>
 
-                <div className="flex flex-col mt-6 ml-9 mmd:hidden">
+                {/* <div className="flex flex-col mt-6 ml-9 mmd:hidden">
                   <SideScroll />
-                </div>
+                </div> */}
                     
                 <div className="flex flex-col md:hidden">
                     <h2 className="text-3xl ml-16 mt-16">Socials</h2>

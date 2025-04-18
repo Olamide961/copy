@@ -1,7 +1,8 @@
 import React from "react";
-import logo from "./img/logo.png";
+import logo from "../assets/img/logo.png";
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import MainNavbar from "./nav/MainNavbar";
 
 
 function Header () {
@@ -9,9 +10,9 @@ function Header () {
    
 
     const navigation = [
-        { name: 'tech', href: '/Tech', current: false },
-        { name: 'media', href: '/Media', current: false },
-        { name: 'Culinary', href: '/Culinary', current: false },
+        { name: 'tech', href: '/tech', current: false },
+        { name: 'media', href: '/media', current: false },
+        { name: 'culinary', href: '/culinary', current: false },
     ]
 
     function classNames(...classes) {
@@ -68,21 +69,9 @@ function Header () {
                             </form>
 
                             <div className="hidden mt-3 sm:ml-6 lg:block">
-                                <div className="flex space-x-10">
-                                    {navigation.map((item) => (
-                                    <a
-                                        key={item.name}
-                                        href={item.href}
-                                        className={classNames(
-                                            item.current ? 'bg-gray-900 text-white' : 'text-black-700 hover:ease-out',
-                                            'rounded-md px-3 py-2 text-lg font-medium'
-                                        )}
-                                        aria-current={item.current ? 'page' : undefined}
-                                    >
-                                        {item.name}
-                                    </a>
-                                    ))}
-                                </div>
+                                <nav className="flex space-x-10">
+                                    <MainNavbar />
+                                </nav>
                             </div>
                         </div>
                     </div>

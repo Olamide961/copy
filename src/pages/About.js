@@ -1,4 +1,4 @@
-import SideScroll from "../internalComp/SideScroll";
+import SideScroll from "../component/SideScroll";
 
 
 export default function About () {

@@ -1,20 +1,15 @@
 import React from "react";
-import logo from "./img/logo.png";
+import logo from "../assets/img/logo.png";
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import SecondaryNavbar from "./nav/SecondaryNavbar";
 
-function Header () {
+function Header ({basePath}) {
 
-    const navigation = [
-        { name: 'About us', href: '/About', current: false },
-        { name: 'Service', href: 'Service', current: false },
-        { name: 'Contact us', href: '/Contact', current: false },
-    ]
-
-    function classNames(...classes) {
-        return classes.filter(Boolean).join(' ')
-      }
-
+    // function classNames(...classes) {
+    //     return classes.filter(Boolean).join(' ')
+    //   } uncomment to use the styling
+      
     return (
         <Disclosure as="nav" className="mx-2">
             {({open}) => (
@@ -38,7 +33,7 @@ function Header () {
                             <a href="/Home" className="h-16 w-auto"><img 
                                 className="h-16 w-auto"
                                 src={logo}
-                                alt="Your Company"
+                                alt="6te9 Limited company logo"
                             />
                             </a>
                             </div>
@@ -63,43 +58,18 @@ function Header () {
                             </form>
 
                             <div className="hidden mt-3 sm:ml-6 lg:block">
-                                <div className="flex space-x-10">
-                                    {navigation.map((item) => (
-                                    <a
-                                        key={item.name}
-                                        href={item.href}
-                                        className={classNames(
-                                            item.current ? 'bg-gray-900 text-white' : 'text-black-700 hover:ease-out',
-                                            'rounded-md px-3 py-2 text-lg font-medium'
-                                        )}
-                                        aria-current={item.current ? 'page' : undefined}
-                                    >
-                                        {item.name}
-                                    </a>
-                                    ))}
-                                </div>
+                                <nav className="flex space-x-10">
+                                   <SecondaryNavbar basePath={basePath}/>
+                                </nav>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <Disclosure.Panel className=" bg-gray-900 rounded-lg mt-2 lg:hidden">
-                    <div className="space-y-1 px-2 pb-3 pt-2">
-                    {navigation.map((item) => (
-                        <Disclosure.Button
-                        key={item.name}
-                        as="a"
-                        href={item.href}
-                        className={classNames(
-                            item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-black-900 hover:text-white',
-                            'block rounded-md px-3 py-2 text-base font-medium'
-                        )}
-                        aria-current={item.current ? 'page' : undefined}
-                        >
-                        {item.name}
-                        </Disclosure.Button>
-                    ))}
-                    </div>
+                    <nav className="space-y-1 px-2 pb-3 pt-2">
+                        <SecondaryNavbar />
+                    </nav>
                 </Disclosure.Panel>
                 </>
             )}

@@ -1,5 +1,5 @@
-import Carousel from "../Content-carousel";
-import Form from "../Form";
+import Carousel from "../component/Content-carousel";
+import Form from "../component/Form";
 
 function Home() {
     return (
