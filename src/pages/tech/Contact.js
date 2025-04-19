@@ -1,43 +1,17 @@
-import img from "../assets/img/img.png"
-
-export default function Form() {
-  const products = [
-    { label: "6te9 tech" },
-    { label: "6te9 media" },
-    { label: "6te9 culinary" },
-  ];
-
-  return (
-    <div className="flex flex-col md:flex-row justify-between items-start gap-10 p-6 md:p-12">
-      {/* PRODUCTS */}
-      <div className="w-full h-full md:w-1/2">
-        <h2 className="flex justify-center text-xl mb-6 items-center text-center md:text-left">
-          PRODUCTS
-        </h2>
-        <div className="flex flex-row justify-center items-start space-x-6">
-          {products.map((item, idx) => (
-            <div
-              key={idx}
-              className="relative w-28 h-28 border border-gray-300 rounded-lg flex items-center justify-center"
-            >
-              {/* Placeholder for image */}
-              <img
-                src={img}
-                alt={item.label}
-                className="w-8 h-8"
-              />
-
-              {/* Text overlapping bottom border */}
-              <div className="absolute bottom-[-10px] bg-white px-2 z-10 text-xs">
-                {item.label}
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* CONTACT FORM */}
-      <div className="w-full md:w-1/2 max-w-md">
+export default function About() {
+    const news = [
+      "Product News: Lorem Ipsum",
+      "Promo: 50% Percent OFF",
+      "Flash Sales: 50% Percent OFF",
+      "Product News: Lorem Ipsum",
+      "Promo: 50% Percent OFF",
+      "Flash Sales: 50% Percent OFF",
+    ];
+  
+    return (
+      <div className="flex justify-between gap-10 px-4 py-10 flex-wrap md:flex-nowrap mx-14 mt-9">
+        {/* Contact Us */}
+        <div className="w-full md:w-1/2 max-w-md">
         <h2 className="text-xl mb-4 text-center md:text-left">
           SEND US A MESSAGE
         </h2>
@@ -95,7 +69,31 @@ export default function Form() {
         />
       </div>
     </div>
-      </div>
     </div>
-  );
-}
+  
+        {/* Socials */}
+        <div className="flex flex-col items-center gap-4">
+          <h3 className="font-semibold">SOCIALS</h3>
+          <div className="flex flex-wrap justify-center gap-6">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" className="w-8 h-8" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Gmail" className="w-8 h-8" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" className="w-8 h-8" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="X" className="w-8 h-8" />
+          </div>
+        </div>
+  
+        {/* News Updates */}
+        <div className="border rounded-md p-4 w-full max-w-xs h-60 overflow-y-auto">
+          <h3 className="text-sm font-semibold mb-2">NEWS UPDATES</h3>
+          <ul className="space-y-1 text-xs">
+            {news.map((n, i) => (
+              <li key={i} className="text-blue-800 hover:underline cursor-pointer">
+                {n}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    );
+  }
+  

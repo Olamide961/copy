@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainLayout from "./layout/MainLayout";
+import SecondaryLayout from "./layout/SecondaryLayout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Product from "./pages/media/Product";

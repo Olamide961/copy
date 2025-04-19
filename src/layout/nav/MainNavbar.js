@@ -2,9 +2,6 @@ import { NavLink } from "react-router-dom";
 
 const MainNavbar = () => {
 
-    function classNames(...classes) {
-        return classes.filter(Boolean).join(' ')
-      }
 
     //map routes to link
       const navigation = [
@@ -20,8 +17,7 @@ const MainNavbar = () => {
                         <NavLink
                             key={item.name}
                             to={item.href}
-                            className={classNames(  item.current ? 'bg-gray-900 text-white' : 'text-black-700 hover:ease-out', 'rounded-md px-3 py-2 text-lg font-medium' )}
-                            aria-current={item.current ? 'page' : undefined}
+                            className="text-black hover:text-gray-500 text-sm lg:text-base"
                         >
                             {item.name}
                         </NavLink>

@@ -5,10 +5,6 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import SecondaryNavbar from "./nav/SecondaryNavbar";
 
 function Header ({basePath}) {
-
-    // function classNames(...classes) {
-    //     return classes.filter(Boolean).join(' ')
-    //   } uncomment to use the styling
       
     return (
         <Disclosure as="nav" className="mx-2">
@@ -28,6 +24,7 @@ function Header ({basePath}) {
                             )}
                             </Disclosure.Button>
                         </div>
+
                         <div className="flex w-full items-center justify-start sm:items-stretch sm:justify-between">
                             <div className="flex flex-shrink-0 items-center">
                             <a href="/Home" className="h-16 w-auto"><img 
@@ -36,7 +33,7 @@ function Header ({basePath}) {
                                 alt="6te9 Limited company logo"
                             />
                             </a>
-                            </div>
+                        </div>
 
 
                             <form className="form flex items-center mlg:hidden">   
