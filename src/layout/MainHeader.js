@@ -3,14 +3,11 @@ import logo from "../assets/img/logo.png";
 import MainNavbar from "./nav/MainNavbar";
 import { Link } from "react-router-dom";
 
-
 function Header () {
 
    const [isMenuOpen, setIsMenuOpen] = useState(false);
-
    const toggleMenu = () => setIsMenuOpen(prev => !prev);
    const closeMenu = () => setIsMenuOpen(false);
-
 
 return (
     <>
