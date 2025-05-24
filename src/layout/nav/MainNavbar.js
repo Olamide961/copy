@@ -5,9 +5,9 @@ const MainNavbar = () => {
 
     //map routes to link
       const navigation = [
-        { name: 'tech', href: '/tech', current: false },
-        { name: 'media', href: '/media', current: false },
-        { name: 'culinary', href: '/culinary', current: false },
+        { name: 'tech', href: 'tech', current: false },
+        { name: 'media', href: 'media', current: false },
+        { name: 'culinary', href: 'culinary', current: false },
     ]
     
     //mainpage navbar links 

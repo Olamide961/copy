@@ -4,7 +4,7 @@ import MainLayout from "./layout/MainLayout";
 import SecondaryLayout from "./layout/SecondaryLayout";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Product from "./pages/media/Product";
+import Product from "./pages/Product";
 import Contact from "./pages/Contact";
 import Sitemap from "./pages/Sitemap";
 import Iframe from "./component/SideScroll";

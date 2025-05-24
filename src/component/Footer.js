@@ -3,7 +3,7 @@
 export default function Footer () {
     return(
         <>
-        <footer class="fixed bg-white w-full bottom-0 mt-4 shadow-2xl mmd:bottom-0">
+        <footer class="bg-white w-full bottom-0 mt-4 mmd:bottom-0">
             <div class="w-full w-full p-4 md:flex md:items-center md:justify-between mmd:text-center">
             <span class="text-md text-black-200 sm:text-center opacity-75 dark:text-black-200">6te9 LTD © 2024 <span className="mx-4">|</span><a href="/Sitemap" class="hover:underline">sitemap</a>
             </span>

@@ -66,7 +66,7 @@ return (
         }`}
       >
         <nav className="flex flex-col items-center space-y-4">
-          <Link to="/tech" className="text-gray-700 w-full ml-14 hover:text-blue-600" onClick={closeMenu}>tech</Link>
+          <Link to="tech" className="text-gray-700 w-full ml-14 hover:text-blue-600" onClick={closeMenu}>tech</Link>
           <Link to="/media" className="text-gray-700 w-full ml-14 hover:text-blue-600" onClick={closeMenu}>media</Link>
           <Link to="/culinary" className="text-gray-700 w-full ml-14 hover:text-blue-600" onClick={closeMenu}>culinary</Link>
         </nav>
