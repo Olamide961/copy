@@ -15,7 +15,7 @@ const Contact = () => {
       {/* Contact Form Section */}
       <div>
         <h2 className="text-2xl font-semibold mb-2">Contact Us</h2>
-        <div className="flex flex-col md:flex-row items-center justify-center gap-24">
+        <div className="flex flex-col md:flex-row items-center justify-start ml-44 gap-24">
           <p className="text-lg font-medium">Send us a message</p>
           <div className="w-full max-w-sm bg-white rounded-lg shadow-lg p-6 space-y-4">
             <input
@@ -60,8 +60,8 @@ const Contact = () => {
       </div>
 
       {/* News Updates Section */}
-      <div>
-        <div className="flex flex-col md:flex-row items-center justify-center gap-12">
+      <div className="mt-32">
+        <div className="flex flex-col md:flex-row items-center justify-end mr-32 gap-12">
           <div className="text-lg font-medium text-center">
             <p>Get the latest news</p>
             <p>Promotional offers and Listings</p>
