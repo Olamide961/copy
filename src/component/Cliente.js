@@ -1,63 +1,44 @@
 import { useEffect, useRef } from "react";
-import img from "../assets/img/img.png";
-
+import img from "../assets/img/img.png"; // Replace with real image path
 
 const partners = [
-  { name: "Business Name", logo: "" },
-  { name: "Business Name", logo: "" },
-  { name: "Business Name", logo: "" },
-  { name: "Business Name", logo: "" },
-  { name: "Business Name", logo: "" },
-  { name: "Business Name", logo: "" },
+  { id: 1, name: "Business Name", image: "" },
+  { id: 2, name: "Business Name", image: "" },
+  { id: 3, name: "Business Name", image: "" },
+  { id: 4, name: "Business Name", image: "" },
+  { id: 5, name: "Business Name", image: "" },
 ];
 
-export default function Cliente () {
-  const carouselRef = useRef(null);
+const totalItems = partners.length;
+const extendedPartners = [...partners, ...partners]; // Duplicate for seamless loop
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (carouselRef.current) {
-        carouselRef.current.scrollBy({
-          left: 200,
-          behavior: "smooth",
-        });
-
-        // Reset scroll if end reached
-        if (
-          carouselRef.current.scrollLeft + carouselRef.current.offsetWidth >=
-          carouselRef.current.scrollWidth
-        ) {
-          carouselRef.current.scrollTo({ left: 0, behavior: "smooth" });
-        }
-      }
-    }, 3000); // scroll every 3s
-
-    return () => clearInterval(interval);
-  }, []);
-
+export default function PartnersCarousel () {
   return (
-    <div className="mb-14 py-10 px-4 text-center">
-      <h2 className="text-xl font-semibold mb-6">Clientele</h2>
-      <div
-        ref={carouselRef}
-        className="flex justify-center overflow-x-auto no-scrollbar space-x-6 px-4"
-      >
-        {partners.map((partner, idx) => (
-          <div
-            key={idx}
-            className="flex-shrink-0 w-36 text-center opacity-80 hover:opacity-100 transition"
-          >
-            <div className="border p-4 rounded">
+    <div className="max-w-6xl mx-auto py-10">
+      <h2 className="text-2xl font-bold text-center mb-6">Clientele</h2>
+      <div className="overflow-hidden">
+        <div
+          className="flex animate-scroll"
+          style={{
+            width: `${(extendedPartners.length / totalItems) * 100}%`,
+          }}
+        >
+          {extendedPartners.map((partner, index) => (
+            <div
+              key={`${partner.id}-${index}`}
+              className="flex-shrink-0 flex justify-center items-center flex-col"
+              style={{ width: `${50/ totalItems}%` }}
+            >
               <img
                 src={img}
                 alt={partner.name}
-                className="mx-auto w-20 h-20 object-contain"
+                className="w-32 h-48 object-cover mb-2"
               />
+              <p className="text-gray-600 text-center">{partner.name}</p>
             </div>
-            <p className="text-sm mt-2 text-gray-700">{partner.name}</p>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
-}
+};

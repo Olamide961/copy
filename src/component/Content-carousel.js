@@ -32,7 +32,7 @@ export default function Carousel () {
                     />
                 </div>
 
-                <p className='text-sm tracking-widest text-gray-700'>
+                <p className='text-sm mt-5 tracking-widest text-gray-700'>
                     EVERYONE DESERVES THE BEST
                 </p>
             </div>

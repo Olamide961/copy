@@ -35,12 +35,12 @@ export default function ShopCarousel() {
   };
 
   return (
-    <div className="flex justify-center items-center p-8 mt-9 space-x-2 max-w-screen-xl mx-auto">
+    <div className="flex justify-end items-center p-8 mt-16 space-x-2 mx-auto mr-0">
       {/* Left Title */}
-      <h2 className="text-4xl font-light tracking-wide text-gray-800">shops</h2>
+      <h2 className="text-4xl font-semibold tracking-wide text-gray-800 mr-9">shops</h2>
 
       {/* Carousel */}
-      <div className="flex items-center space-x-4">
+      <div className="flex items-center space-x-9 ">
         <button
           onClick={prevSlide}
           className="border rounded-full p-2 hover:bg-gray-100"
@@ -51,7 +51,7 @@ export default function ShopCarousel() {
         {/* Image & Details */}
         <div className="flex items-center space-x-6">
           {/* Image Box */}
-          <div className="w-40 h-40 border flex items-center justify-center">
+          <div className="w-48 h-48 border flex items-center justify-center">
             <img
               src={img}
               alt={shops[index].title}
@@ -60,12 +60,12 @@ export default function ShopCarousel() {
           </div>
 
           {/* Details */}
-          <div className="max-w-xs text-left">
-            <h3 className="text-sm font-semibold mb-2 capitalize">
+          <div className="max-w-lg text-left">
+            <h3 className="text-2xl font-semibold mb-2 capitalize">
               {shops[index].title}
             </h3>
-            <p className="text-xs text-gray-600 mb-3">{shops[index].description}</p>
-            <button className="bg-black text-white text-xs py-1 px-4 rounded">
+            <p className="text-lg text-gray-600 mb-3">{shops[index].description}</p>
+            <button className="bg-black text-white text-sm py-4 px-4 rounded">
               Start Shopping
             </button>
 
@@ -96,7 +96,7 @@ export default function ShopCarousel() {
         <img
           src={img4}
           alt="Background Art"
-          className="w-48 h-48 object-contain opacity-60"
+          className="w-98 h-98 object-contain opacity-60"
         />
       </div>
     </div>
